@@ -1,0 +1,4 @@
+Objects_shared/
+Objects_static/
+libjson.a
+libjson.so.*
