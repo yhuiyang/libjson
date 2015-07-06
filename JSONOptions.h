@@ -6,12 +6,13 @@
  *  that you don't have to remember them, or look them up all the time
  */
 
+#define NDEBUG
 
 /*
  *  JSON_LIBRARY must be declared if libjson is compiled as a static or dynamic 
  *  library.  This exposes a C-style interface, but none of the inner workings of libjson
  */
-#define JSON_LIBRARY
+//#define JSON_LIBRARY
 
 
 /*
@@ -61,7 +62,7 @@
  *  this would be a client application communicating with a server if the server
  *  returns things like last modified date and other things that you don't use.
  */
-//#define JSON_PREPARSE
+#define JSON_PREPARSE
 
 
 /*
@@ -185,7 +186,7 @@
  *  read and parse json, this allows it to write back out.  Changing the value of the writer
  *  changes how libjson compiles, and how fast it will go when writing
  */
-#define JSON_WRITE_PRIORITY MED
+//#define JSON_WRITE_PRIORITY MED
 
 
 /*
@@ -223,7 +224,7 @@
  *  parsing json that has comments in it as it simply ignores them, but with this option
  *  it keeps the comments and allows you to insert further comments
  */
-#define JSON_COMMENTS
+//#define JSON_COMMENTS
 
 
 /*
@@ -260,7 +261,7 @@
  *  JSON_CASE_INSENSITIVE_FUNCTIONS turns on funtions for finding child nodes in a case-
  *  insenititve way
  */
-#define JSON_CASE_INSENSITIVE_FUNCTIONS
+//#define JSON_CASE_INSENSITIVE_FUNCTIONS
 
 
 /*
@@ -321,7 +322,7 @@
  *  compatibility between major releases.  It is highly recommended that you move your functions
  *  over to the new equivalents
  */
-#define JSON_DEPRECATED_FUNCTIONS
+//#define JSON_DEPRECATED_FUNCTIONS
 
 
 /*
