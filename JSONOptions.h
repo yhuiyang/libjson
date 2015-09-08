@@ -186,7 +186,7 @@
  *  read and parse json, this allows it to write back out.  Changing the value of the writer
  *  changes how libjson compiles, and how fast it will go when writing
  */
-//#define JSON_WRITE_PRIORITY MED
+#define JSON_WRITE_PRIORITY MED
 
 
 /*
